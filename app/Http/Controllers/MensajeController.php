@@ -18,7 +18,12 @@ class MensajeController extends Controller {
         ]);
 
         //Al validar. creamos el msj en la bbdd
-        $mensaje = Mensaje::create($validacion);
+        $mensaje = new Mensaje;
+        $mensaje->nombre= $request->nombre; 
+        $mensaje->email= $request->email; 
+        $mensaje->mensaje= $request->mensaje; 
+        $mensaje->respuesta= null; 
+        $mensaje->save();
 
         //retornamos respuesta de msj exitoso
         return response()->json([
