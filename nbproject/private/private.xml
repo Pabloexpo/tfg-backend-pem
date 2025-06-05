@@ -5,6 +5,7 @@
         <group>
             <file>file:/var/www/tfg-backend-pem.es/app/Http/Controllers/PartidosController.php</file>
             <file>file:/var/www/tfg-backend-pem.es/README.md</file>
+            <file>file:/var/www/tfg-backend-pem.es/app/Http/Controllers/MensajeController.php</file>
             <file>file:/var/www/tfg-backend-pem.es/.env</file>
             <file>file:/var/www/tfg-backend-pem.es/routes/api.php</file>
             <file>file:/var/www/tfg-backend-pem.es/app/Http/Controllers/EquipoJugadorController.php</file>

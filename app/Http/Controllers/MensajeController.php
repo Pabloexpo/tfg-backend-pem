@@ -34,7 +34,7 @@ class MensajeController extends Controller {
     }
 
     public function getMensajes() {
-        $mensajes = DB::select("SELECT * FROM mensajes WHERE respuesta = ''");
+        $mensajes = DB::select("SELECT * FROM mensajes WHERE respuesta = '' or respuesta is null");
 
         return response()->json([
                     "mensaje" => "Mensajes de consumidores recuperados con éxito",
