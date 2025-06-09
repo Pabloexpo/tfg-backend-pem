@@ -100,7 +100,7 @@ class PistaController extends Controller {
         $pista = DB::select("SELECT partido_pista AS pista, COUNT(*) as veces_usada, pi.pista_nombre
     FROM partidos p
     JOIN pistas pi on pi.pista_id=p.partido_pista
-    GROUP BY partido_pista
+    GROUP BY partido_pista, pi.pista_nombre
     ORDER BY veces_usada DESC
     LIMIT 1;");
 

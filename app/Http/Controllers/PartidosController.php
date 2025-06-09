@@ -169,7 +169,7 @@ class PartidosController extends Controller {
     FROM partidos p
     JOIN equipos e1 ON e1.equipo_id = p.partido_equ_1
     OR e1.equipo_id = p.partido_equ_2
-    GROUP BY e1.equipo_nombre
+    GROUP BY e1.equipo_nombre, e1.equipo_id
     ORDER BY partidos_ganados DESC");
 
         return response()->json([
